@@ -4,11 +4,10 @@
   "description": "Vue 3 / TypeScript 5 library for UI components / modules",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dark-kitt/vue-ts-kitt.git"
+    "url": "git+https://github.com/kitt-digital/vue-ts-kitt.git"
   },
-  "author": "dark-kitt <42038118+dark-kitt@users.noreply.github.com>",
+  "author": "kitt-digital <42038118+kitt-digital@users.noreply.github.com>",
   "license": "CC-BY-4.0",
-  "packageManager": "yarn@4.2.1",
   "devDependencies": {
     "@babel/types": "^7.24.5",
     "@chromatic-com/storybook": "^1",
@@ -31,7 +30,7 @@
     "@vitejs/plugin-vue": "^5.0.4",
     "@vue/eslint-config-typescript": "^13.0.0",
     "conventional-changelog-angular": "^8.0.0",
-    "eslint": "^8.57.0",
+    "eslint": "^8.57.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-mdx": "^3.1.5",
     "eslint-plugin-prettier": "^5.1.3",
@@ -63,8 +62,8 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "vite build",
-    "storybook": "CACHE_DIR=$PWD/.yarn/cache storybook dev -p 6006",
-    "build-storybook": "CACHE_DIR=$PWD/.yarn/cache storybook build -o dist/storybook"
+    "storybook": "CACHE_DIR=$PWD/cache storybook dev -p 6006",
+    "build-storybook": "CACHE_DIR=$PWD/cache storybook build -o dist/storybook"
   },
   "bin": {
     "vue-ts-docs": "./bin/vue-ts-docs.js"

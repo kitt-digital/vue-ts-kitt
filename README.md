@@ -12,6 +12,9 @@ yarn add -D vue-ts-kitt
 ```shell
 npm i -D vue-ts-kitt
 ```
+```shell
+pnpm i -D vue-ts-kitt
+```
 
 All components / modules are documented via Storybook. After installing the library, just call the following script to open the docs.
 ```shell
@@ -19,6 +22,9 @@ yarn vue-ts-docs
 ```
 ```shell
 npm run vue-ts-docs
+```
+```shell
+pnpm vue-ts-docs
 ```
 Or add it to your scripts section in your `package.json` file.
 ```json
@@ -47,29 +53,6 @@ import { Button } from 'vue-ts-kitt';
 @import 'vue-ts-kitt/style.css';
 </style>
 ```
-
-## Working in the library.
-
-This project uses Yarn 4 as package manager. So, **don't** use `npm` to install the modules. \
-<sub>(_Troubleshoot: Please take a look on ["**Starting with Yarn**"](https://yarnpkg.com/getting-started)_)</sub>
-
-Start by enabling Corepack, if it isn't already. This will add the yarn binary to your PATH.
-```shell
-corepack enable
-```
-Install the defined modules of the package.json file.
-```shell
-yarn
-```
-Generate the sdks for VS Code.
-```shell
-yarn dlx @yarnpkg/sdks vscode
-```
-Generate the output.
-```shell
-yarn build
-```
-If you need an example to create a component, take a look at the button component.
 
 ## Git Hooks
 

@@ -19,7 +19,7 @@ Note: The usage of <scope>, <symbol> and <body> is optional
 Accepted <types>: $MESSAGE_TYPES
 
 Please follow the instruction on:
-https://github.com/dark-kitt/vue-ts-kitt?tab=readme-ov-file#semantic-release
+https://github.com/kitt-digital/vue-ts-kitt?tab=readme-ov-file#semantic-release
 --- --- ---
 ";
 # Split the $MESSAGE_TYPES (feat, fix, ..etc.) string into an array of values
