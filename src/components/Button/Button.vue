@@ -36,5 +36,5 @@ withDefaults(defineProps<Props>(), {
 </script>
 
 <style lang="scss">
-@import './Button';
+@use './Button';
 </style>

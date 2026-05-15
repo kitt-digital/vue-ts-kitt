@@ -9,6 +9,13 @@ export default defineConfig({
   json: {
     stringify: true
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: 'modern'
+      }
+    }
+  },
   plugins: [
     vue(),
     dts({

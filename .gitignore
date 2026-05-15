@@ -1,6 +1,8 @@
 # directories
-dist/
 node_modules/
+cache/
+dist/
 
 # files
 .DS_Store
+debug-storybook.log

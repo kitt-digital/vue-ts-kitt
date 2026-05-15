@@ -22,5 +22,5 @@ withDefaults(defineProps<Props>(), {
 </script>
 
 <style lang="scss" scoped>
-@import './Link';
+@use './Link';
 </style>
