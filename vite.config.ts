@@ -31,7 +31,7 @@ export default defineConfig({
     }
   },
   build: {
-    target: 'ESNext',
+    target: 'esnext',
     minify: true,
     reportCompressedSize: true,
     lib: {
