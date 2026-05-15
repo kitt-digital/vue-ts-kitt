@@ -28,13 +28,13 @@ jobs:
         with:
           node-version: '20.x'
       - name: Install dependencies
-        run: npm install
-      - name: Ensure the integrity of packages from the public npm registry
-        run: npm audit signatures
+        run: pnpm install
+      - name: Ensure the integrity of packages from the public pnpm registry
+        run: pnpm audit signatures
       - name: Bundle Vue 3 library
-        run: npm run build
+        run: pnpm run build
       - name: Bundle Storybook
-        run: npm run build-storybook
+        run: pnpm run build-storybook
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GTHB_TOKEN }}
