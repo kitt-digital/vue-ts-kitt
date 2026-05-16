@@ -4,11 +4,11 @@
   "description": "Vue 3 / TypeScript 5 library for UI components / modules",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dark-kitt/vue-ts-kitt.git"
+    "url": "git+https://github.com/kitt-digital/vue-ts-kitt.git"
   },
   "author": {
-    "name": "dark-kitt",
-    "email": "42038118+dark-kitt@users.noreply.github.com"
+    "name": "kitt-digital",
+    "email": "42038118+kitt-digital@users.noreply.github.com"
   },
   "license": "CC-BY-4.0",
   "devDependencies": {
