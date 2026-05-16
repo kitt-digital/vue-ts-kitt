@@ -6,7 +6,7 @@
     "type": "git",
     "url": "git+https://github.com/kitt-digital/vue-ts-kitt.git"
   },
-  "author": "dark-kitt <42038118+dark-kitt@users.noreply.github.com>",
+  "author": "kitt-digital <42038118+kitt-digital@users.noreply.github.com>",
   "license": "CC-BY-4.0",
   "devDependencies": {
     "@babel/types": "^7.29.0",
