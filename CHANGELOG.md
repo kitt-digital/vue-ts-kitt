@@ -1,3 +1,36 @@
+# [1.11.0](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.10.0...v1.11.0) (2026-05-18)
+
+
+### Bug Fixes
+
+* **core:** + updgrade all packages ([38874cc](https://github.com/kitt-digital/vue-ts-kitt/commit/38874cc049d2a8f7988c79a5385db024cda0fe20))
+* **eslint:** + typescript parser version ([fb2431f](https://github.com/kitt-digital/vue-ts-kitt/commit/fb2431f10cbfe72eccfc559dd135403b7399780b))
+* **eslint:** + typescript version ([0e83c35](https://github.com/kitt-digital/vue-ts-kitt/commit/0e83c35bdb4b4c01acab55f5927a66f57e8c63e9))
+* **eslint:** + vue typescript version ([b1b4d36](https://github.com/kitt-digital/vue-ts-kitt/commit/b1b4d3607567cf1eb802d99b062c817fb0a518b1))
+* **github:** + token ([3ff0eea](https://github.com/kitt-digital/vue-ts-kitt/commit/3ff0eea61bdf7439cd616bb8e289fbf34541b9fc))
+* **github:** ~ pnpm to npm ([2043bc9](https://github.com/kitt-digital/vue-ts-kitt/commit/2043bc9a4ef0db3a360aa51df11f44af9276183d))
+* **package-json:** ~ author ([2cfbbdb](https://github.com/kitt-digital/vue-ts-kitt/commit/2cfbbdb815535d8be26a9308fc6dbe068aa05174))
+* **package-json:** ~ author email ([94ddab7](https://github.com/kitt-digital/vue-ts-kitt/commit/94ddab7cf5eb3dfcb900fae4e641ed07f22a8669))
+* **package-json:** ~ repository, ~ author ([7f88edc](https://github.com/kitt-digital/vue-ts-kitt/commit/7f88edc05999a28ae481a7decc186bb5ca051348))
+* **package:** ~ repo, ~ author ([e3f4757](https://github.com/kitt-digital/vue-ts-kitt/commit/e3f47571a7e0a7c95f367ec353638fbbc2bec213))
+* **package:** ~ version ([07b7558](https://github.com/kitt-digital/vue-ts-kitt/commit/07b7558910eae043aefe25e5f96ae225f6a88484))
+* **publish:** + ssh ([6da60a1](https://github.com/kitt-digital/vue-ts-kitt/commit/6da60a17bd9919cebc6db3af11268d5fcd3f78b4))
+* **publish:** ~ author and permissions ([306cff0](https://github.com/kitt-digital/vue-ts-kitt/commit/306cff067e0c0852c4f062c2fc70c0bc1ecd7450))
+* **publish:** ~ env var name ([b7f09cd](https://github.com/kitt-digital/vue-ts-kitt/commit/b7f09cd4ce73b2f4316c28e372873e933a284178))
+* **publish:** ~ GitHub token naming ([6146d9f](https://github.com/kitt-digital/vue-ts-kitt/commit/6146d9fb8484f9aa1ee984b913f66f0c6f9dcdde))
+* **publish:** ~ node version ([9d87529](https://github.com/kitt-digital/vue-ts-kitt/commit/9d875297e35d0223a1010ffe10d28419a1670636))
+* **publish:** ~ ssh ([210c4cd](https://github.com/kitt-digital/vue-ts-kitt/commit/210c4cd54c930a659d1842c6e6679d02eea2bf04))
+* **release:** - changelog, ~ permissions ([bba7768](https://github.com/kitt-digital/vue-ts-kitt/commit/bba776831dbc85997a835fe87f0c37b9e6655d1d))
+* **release:** + changelog ([b48077e](https://github.com/kitt-digital/vue-ts-kitt/commit/b48077ef0d3618154105dd4a558851f9f72a5031))
+* **storybook:** ~ typescript issues ([79d6a27](https://github.com/kitt-digital/vue-ts-kitt/commit/79d6a2784c29ad67ec71f06b7bc64c8248980137))
+* **workflow:** ~ action versions ([88b9070](https://github.com/kitt-digital/vue-ts-kitt/commit/88b907079dc045f2b028a43050a5a4ce50afd96c))
+* **workflow:** ~ github action ([6f78864](https://github.com/kitt-digital/vue-ts-kitt/commit/6f78864ac617a53fe326c73f7a9bd12c8f450f39))
+
+
+### Features
+
+* **core:** update storybook, vite-config, scss ([c9db115](https://github.com/kitt-digital/vue-ts-kitt/commit/c9db1157de30afceee76a66afaf2752b1b7ba5bf))
+
 # [1.10.0](https://github.com/dark-kitt/vue-ts-kitt/compare/v1.9.1...v1.10.0) (2024-05-15)
 
 
