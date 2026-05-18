@@ -39,8 +39,10 @@ jobs:
       - name: Ensure the integrity of packages from the public npm registry
         run: npm audit signatures
 
-      - name: Build package
+      - name: Build Vue 3 library
         run: npm run build
+      - name: Build Storybook
+        run: npm run build-storybook
 
       - name: Publish package
         env:
