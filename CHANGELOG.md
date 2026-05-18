@@ -1,3 +1,10 @@
+## [1.12.1](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.12.0...v1.12.1) (2026-05-18)
+
+
+### Bug Fixes
+
+* **package-json:** ~ cmd ([61c86a2](https://github.com/kitt-digital/vue-ts-kitt/commit/61c86a25b0d1a8b922de233004b1d96c8a7e0372))
+
 # [1.12.0](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.11.0...v1.12.0) (2026-05-18)
 
 
