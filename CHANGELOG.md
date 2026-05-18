@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.11.0...v1.12.0) (2026-05-18)
+
+
+### Features
+
+* **core:** ~ environment ([d498e74](https://github.com/kitt-digital/vue-ts-kitt/commit/d498e74647fe6e90d2a84eba1593b27ec426e669))
+
 # [1.11.0](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.10.0...v1.11.0) (2026-05-18)
 
 
