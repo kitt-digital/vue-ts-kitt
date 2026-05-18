@@ -1,3 +1,10 @@
+## [1.12.2](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.12.1...v1.12.2) (2026-05-18)
+
+
+### Bug Fixes
+
+* **ts:** ~ config ([fbb781d](https://github.com/kitt-digital/vue-ts-kitt/commit/fbb781d82988a345f7e5d343da95b529934cc791))
+
 ## [1.12.1](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.12.0...v1.12.1) (2026-05-18)
 
 
