@@ -66,7 +66,7 @@
     "build-storybook": "CACHE_DIR=$PWD/cache storybook build -o dist/storybook"
   },
   "bin": {
-    "vue-ts-docs": "./bin/vue-ts-docs.js"
+    "vue-ts-docs": "bin/vue-ts-docs.js"
   },
   "keywords": [
     "vue",
