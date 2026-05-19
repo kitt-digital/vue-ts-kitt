@@ -27,8 +27,9 @@ portfinder.setBasePort(PORT);
     const path = resolve(__dirname, '../dist/storybook');
     // set up server
     server.use(express.static(path));
-    server.get('*', (req, res) => {
-      res.sendFile(path + '/index.html');
+    server.get('/*path', (req, res) => {
+      // redirect all routes to index.html
+      res.redirect('/');
     });
 
     server.listen(port, () => {

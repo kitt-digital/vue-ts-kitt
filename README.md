@@ -2,7 +2,7 @@
 
 Another Vue 3 component / module library that includes TypeScript 5 and is bundled by Vite.
 
-# ⚠️ Library is still in progress and not finalised
+# ⚠️ Library is still in progress and is not finalised
 
 ## Install
 
@@ -14,25 +14,6 @@ npm i -D vue-ts-kitt
 ```
 ```shell
 pnpm i -D vue-ts-kitt
-```
-
-All components / modules are documented via Storybook. After installing the library, just call the following script to open the docs.
-```shell
-yarn vue-ts-docs
-```
-```shell
-npm run vue-ts-docs
-```
-```shell
-pnpm vue-ts-docs
-```
-Or add it to your scripts section in your `package.json` file.
-```json
-{
-  "scripts": {
-    "docs": "vue-ts-docs"
-  }
-}
 ```
 
 ## Usage
@@ -52,6 +33,27 @@ import { Button } from 'vue-ts-kitt';
 <style lang="scss">
 @import 'vue-ts-kitt/style.css';
 </style>
+```
+
+# Working in the library
+
+All components / modules are documented in Storybook. After cloning the library, just call `npm link` to create a symlink to the `bin/vue-ts-docs.js` file and call the following script to open the docs.
+
+```shell
+vue-ts-docs
+```
+
+### Troubleshoot
+
+If something went wrong and you get e.g. a permission denied error, just delete the symlink directory in the `~/.npm/_npx` directory and call the `npm link` command again.
+
+Or add it to your scripts section in your `package.json` file.
+```json
+{
+  "scripts": {
+    "docs": "node bin/vue-ts-docs.js"
+  }
+}
 ```
 
 ## Git Hooks
