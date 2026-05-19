@@ -1,3 +1,10 @@
+## [1.12.3](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.12.2...v1.12.3) (2026-05-19)
+
+
+### Bug Fixes
+
+* **vue-ts-docs:** ~ express redirect to index, ~ README ([0b27021](https://github.com/kitt-digital/vue-ts-kitt/commit/0b27021b197d9680c9fd2a9f8b5b264ad07e0fc1))
+
 ## [1.12.2](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.12.1...v1.12.2) (2026-05-18)
 
 
