@@ -1,3 +1,10 @@
+## [1.12.4](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.12.3...v1.12.4) (2026-05-19)
+
+
+### Bug Fixes
+
+* **release:** + publish README.md ([3de599d](https://github.com/kitt-digital/vue-ts-kitt/commit/3de599d73dce6c38371672cabb405215748fdf72))
+
 ## [1.12.3](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.12.2...v1.12.3) (2026-05-19)
 
 
