@@ -7,13 +7,13 @@ Another Vue 3 component / module library that includes TypeScript 5 and is bundl
 ## Install
 
 ```shell
-yarn add -D vue-ts-kitt
-```
-```shell
 npm i -D vue-ts-kitt
 ```
 ```shell
 pnpm i -D vue-ts-kitt
+```
+```shell
+yarn add -D vue-ts-kitt
 ```
 
 ## Usage
@@ -62,7 +62,7 @@ It is necessary to set the custom hook directory after each clone. To do so, you
 ```shell
 git config core.hooksPath .hooks
 ```
-Afterward, the `commit-msg` hook inside the .hooks directory will `lint` your `commit messages`.
+Afterward, the `commit-msg` hook inside the `./.hooks` directory will `lint` your `commit messages`.
 
 ## Semantic Release
 It is used to automate the package release workflow by your commit messages.
