@@ -19,7 +19,7 @@ export default defineConfig({
   plugins: [
     vue(),
     dts({
-      outDir: ['dist', 'src/@types'],
+      outDirs: ['dist', 'src/@types'],
       cleanVueFileName: true,
       staticImport: true
     })
