@@ -16,6 +16,20 @@ pnpm i -D vue-ts-kitt
 yarn add -D vue-ts-kitt
 ```
 
+## Docs
+
+All components / modules are documented in Storybook.
+
+```shell
+npm exec vue-ts-docs
+```
+```shell
+pnpm exec vue-ts-docs
+```
+```shell
+yarn exec vue-ts-docs
+```
+
 ## Usage
 
 ```vue
@@ -45,9 +59,9 @@ vue-ts-docs
 
 ### Troubleshoot
 
-If something went wrong and you get e.g. a permission denied error, just delete the symlink directory in the `~/.npm/_npx` directory and call the `npm link` command again.
+If something went wrong, e.g. you get a permission denied error or anything else, just delete the `node_modules` directory or the symlink directory / file in the global folders (e.g. `~/.npm/_npx` or `~/.nvm/versions/node/v24.14.1/bin`) and call the `npm link` command again. Solves very often the issue.
 
-Or add it to your scripts section in your `package.json` file.
+Or add the following script to the scripts section in the `package.json` file.
 ```json
 {
   "scripts": {
