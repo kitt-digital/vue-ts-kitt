@@ -1,3 +1,10 @@
+## [1.13.1](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.13.0...v1.13.1) (2026-05-20)
+
+
+### Bug Fixes
+
+* **release:** - bin dir in release config ([944ede8](https://github.com/kitt-digital/vue-ts-kitt/commit/944ede81c7c51d0e51b035741ffadf186dc6d77e))
+
 # [1.13.0](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.12.5...v1.13.0) (2026-05-20)
 
 ## [1.12.5](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.12.4...v1.12.5) (2026-05-20)
