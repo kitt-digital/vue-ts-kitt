@@ -1,3 +1,10 @@
+## [1.14.2](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.14.1...v1.14.2) (2026-05-24)
+
+
+### Bug Fixes
+
+* **release:** ~ switch npm to pnpm ([37bb310](https://github.com/kitt-digital/vue-ts-kitt/commit/37bb3107830183d6a9ce11b29f3e9b361323a2e5))
+
 ## [1.14.1](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.14.0...v1.14.1) (2026-05-24)
 
 
