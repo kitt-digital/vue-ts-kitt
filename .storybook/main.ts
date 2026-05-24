@@ -1,7 +1,6 @@
 import type { StorybookConfig } from '@storybook/vue3-vite';
-import { UserConfig } from 'vite';
+import { UserConfig, PluginOption } from 'vite';
 import vue from '@vitejs/plugin-vue';
-import dts from 'vite-plugin-dts';
 // Use process.env.NODE_ENV to check if we are in development or production mode
 const config: StorybookConfig = {
   stories: ['../src/docs/**/*.mdx', '../src/components/**/*.stories.ts'],
