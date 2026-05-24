@@ -11,6 +11,11 @@
     "email": "169592437+kitt-digital@users.noreply.github.com"
   },
   "license": "CC-BY-4.0",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "tag": "latest",
+    "provenance": true
+  },
   "devDependencies": {
     "@anolilab/semantic-release-pnpm": "^8.1.14",
     "@babel/types": "^7.29.0",
