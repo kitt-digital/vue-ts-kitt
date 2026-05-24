@@ -1,3 +1,10 @@
+## [1.14.9](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.14.8...v1.14.9) (2026-05-24)
+
+
+### Bug Fixes
+
+* **vite:** ~ terser ecma value ([e211d89](https://github.com/kitt-digital/vue-ts-kitt/commit/e211d891eefa24520ee86c5bf401e02203612c51))
+
 ## [1.14.8](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.14.7...v1.14.8) (2026-05-24)
 
 
