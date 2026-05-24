@@ -55,8 +55,16 @@
   ],
   "main": "./dist/index.js",
   "exports": {
-    ".": "./dist/index.js",
-    "./style.css": "./dist/style.css"
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./components/*": {
+      "import": "./dist/components/**/*.js",
+      "types": "./dist/components/**/*.d.ts"
+    },
+    "./style.css": "./dist/style.css",
+    "./components/**/*.css": "./dist/components/**/*.css"
   },
   "types": "./dist/index.d.ts",
   "scripts": {
