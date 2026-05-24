@@ -1,3 +1,13 @@
+## [1.13.2](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.13.1...v1.13.2) (2026-05-24)
+
+
+### Bug Fixes
+
+* **assets:** + gitkeep ([e2ab548](https://github.com/kitt-digital/vue-ts-kitt/commit/e2ab548cddbc3618c882b7c33c5f3566fd03244e))
+* **storybook:** - @chromatic-com/storybook ([90a5d38](https://github.com/kitt-digital/vue-ts-kitt/commit/90a5d38cf8554640b419f28471295a2b5898dfa9))
+* **typescript:** ~ type definitions ([ad07621](https://github.com/kitt-digital/vue-ts-kitt/commit/ad07621e79b403f6673841ac3c61ba473ffb23e6))
+* **vite:** ~ outDirs ([ffcfd12](https://github.com/kitt-digital/vue-ts-kitt/commit/ffcfd12d69e9bd18646d7654c65ae57f0938a40f))
+
 ## [1.13.1](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.13.0...v1.13.1) (2026-05-20)
 
 
