@@ -49,7 +49,7 @@ jobs:
         run: pnpm build-storybook
 
       - name: Write .npmrc file
-        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM }}\n@dark-kitt:registry=https://registry.npmjs.org/" > ~/.npmrc
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM }}" > ~/.npmrc
 
       - name: Publish package
         env:
