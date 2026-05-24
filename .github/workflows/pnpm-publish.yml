@@ -55,4 +55,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.PAT }}
           NPM_TOKEN: ${{ secrets.NPM }}
+          NPM_CONFIG_USERCONFIG: ${{ secrets.NPM_USERCONFIG }}
         run: pnpm dlx semantic-release
