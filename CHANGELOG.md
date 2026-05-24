@@ -1,3 +1,10 @@
+## [1.14.13](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.14.12...v1.14.13) (2026-05-24)
+
+
+### Bug Fixes
+
+* **package-json:** ~ exports ([b80c663](https://github.com/kitt-digital/vue-ts-kitt/commit/b80c6634e90e373b0c6aa8bd128bade403b6e235))
+
 ## [1.14.12](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.14.11...v1.14.12) (2026-05-24)
 
 
