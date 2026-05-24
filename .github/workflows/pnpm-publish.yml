@@ -33,19 +33,23 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: '24.x'
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v6
+        with:
+          version: '11.x'
 
       - name: Install dependencies
-        run: npm install --legacy-peer-deps
+        run: pnpm install
       - name: Ensure the integrity of packages from the public npm registry
-        run: npm audit signatures
+        run: pnpm audit signatures
 
       - name: Build Vue 3 library
-        run: npm run build
+        run: pnpm build
       - name: Build Storybook
-        run: npm run build-storybook
+        run: pnpm build-storybook
 
       - name: Publish package
         env:
           GITHUB_TOKEN: ${{ secrets.PAT }}
           NPM_TOKEN: ${{ secrets.NPM }}
-        run: npx semantic-release
+        run: pnpm dlx semantic-release
