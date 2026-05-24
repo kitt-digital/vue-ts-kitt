@@ -54,15 +54,19 @@
     "dist"
   ],
   "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "module": "./dist/index.js",
+      "types": "./dist/index.d.ts",
+      "style": "./dist/style.css"
     },
-    "./style.css": "./dist/style.css",
-    "./components/*/*.css": "./dist/components/*/*.css"
+    "./components/*": {
+      "module": "./dist/components/*/index.js",
+      "types": "./dist/components/*/*.d.ts",
+      "style": "./dist/components/*/style.css"
+    }
   },
-  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "vite build",
     "storybook": "CACHE_DIR=$PWD/cache storybook dev -p 6006",
