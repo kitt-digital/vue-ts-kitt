@@ -3,7 +3,7 @@ import { resolve } from 'path';
 import { defineConfig } from 'vite';
 
 import vue from '@vitejs/plugin-vue';
-import dts from 'vite-plugin-dts';
+import dts from 'unplugin-dts/vite';
 
 export default defineConfig({
   cacheDir: 'cache/.vite',
@@ -15,10 +15,23 @@ export default defineConfig({
   plugins: [
     vue(),
     dts({
-      outDirs: ['dist', 'src/@types'],
+      outDirs: ['src/@types', 'dist'],
+      exclude: ['**/*.stories.ts'],
       cleanVueFileName: true,
       staticImport: true,
-      exclude: ['**/*.stories.ts']
+      beforeWriteFile: (filePath, content) => {
+        /**
+         * Replace multiple whitespaces for
+         * single whitespace to reduce the file size
+         * 
+         * NOTE:
+         * filePath order is related to outDirs order
+         */
+        if (filePath.includes('dist/')) {
+          content = content.replace(/\s+/g, ' ');
+        }
+        return { filePath, content };
+      }
     }),
     {
       // custom plugin to call scripts after the build is finished
@@ -46,7 +59,13 @@ export default defineConfig({
   },
   build: {
     target: 'esnext',
-    minify: true,
+    minify: 'terser',
+    terserOptions: {
+      ecma: 6,
+      format: {
+        comments: false
+      }
+    },
     emptyOutDir: true,
     reportCompressedSize: true,
     lib: {
@@ -60,7 +79,12 @@ export default defineConfig({
       output: {
         entryFileNames: `[name].js`,
         chunkFileNames: `[name].js`,
-        assetFileNames: `[name].[ext]`,
+        assetFileNames: asset => {
+          if (asset.name && asset.name.endsWith('.css')) {
+            return `${asset.name.replace(/\w+\.css$/, 'style.css')}`;
+          }
+          return `[name].[ext]`;
+        },
         globals: {
           vue: 'Vue'
         },

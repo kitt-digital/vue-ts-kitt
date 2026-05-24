@@ -2,4 +2,5 @@
   * This file is the main entry point for the styles of the component library.
   * It imports all the styles from each component as CSS files.
   */
-@import "./components/Button/Button.css";
+@import "./components/Button/style.css";
+@import "./components/Link/style.css";
