@@ -1,3 +1,10 @@
+## [1.14.1](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.14.0...v1.14.1) (2026-05-24)
+
+
+### Bug Fixes
+
+* **workflow:** ~  switch to pnpm ([f90b36f](https://github.com/kitt-digital/vue-ts-kitt/commit/f90b36fbf92829fb4b56e418955616d4d41c0b9d))
+
 # [1.14.0](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.13.2...v1.14.0) (2026-05-24)
 
 
