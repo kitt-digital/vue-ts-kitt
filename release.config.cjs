@@ -35,7 +35,7 @@ module.exports = {
     ],
     '@semantic-release/release-notes-generator',
     '@semantic-release/changelog',
-    'semantic-release-pnpm',
+    '@containerbase/semantic-release-pnpm',
     [
       '@semantic-release/git',
       {
