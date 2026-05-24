@@ -64,7 +64,7 @@
       "types": "./dist/components/**/*.d.ts"
     },
     "./style.css": "./dist/style.css",
-    "./components/*/*.css": "./dist/components/*/*.css"
+    "./components/Button/style.css": "./dist/components/Button/style.css"
   },
   "types": "./dist/index.d.ts",
   "scripts": {
