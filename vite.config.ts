@@ -25,7 +25,8 @@ export default defineConfig({
          * single whitespace to reduce the file size
          * 
          * NOTE:
-         * filePath order is related to outDirs order
+         * filePath order is related to outDirs order,
+         * only single content is given for both outDirs
          */
         if (filePath.includes('dist/')) {
           content = content.replace(/\s+/g, ' ');
@@ -61,7 +62,7 @@ export default defineConfig({
     target: 'esnext',
     minify: 'terser',
     terserOptions: {
-      ecma: 6,
+      ecma: 2020,
       format: {
         comments: false
       }
