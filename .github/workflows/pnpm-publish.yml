@@ -48,12 +48,8 @@ jobs:
       - name: Build Storybook
         run: pnpm build-storybook
 
-      - name: Write .npmrc file
-        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM }}\n@dark-kitt:registry=https://registry.npmjs.org/" > ~/.npmrc
-
       - name: Publish package
         env:
           GITHUB_TOKEN: ${{ secrets.PAT }}
           NPM_TOKEN: ${{ secrets.NPM }}
-          NPM_CONFIG_USERCONFIG: ${{ secrets.NPM_USERCONFIG }}
         run: pnpm dlx semantic-release
