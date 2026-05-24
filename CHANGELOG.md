@@ -1,3 +1,10 @@
+## [1.14.8](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.14.7...v1.14.8) (2026-05-24)
+
+
+### Bug Fixes
+
+* **workflow:** - .npmrc ([a072178](https://github.com/kitt-digital/vue-ts-kitt/commit/a072178a3b18bc4395d21f3fea80cdf25110b888))
+
 ## [1.14.7](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.14.6...v1.14.7) (2026-05-24)
 
 
