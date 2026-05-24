@@ -1,3 +1,10 @@
+## [1.14.3](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.14.2...v1.14.3) (2026-05-24)
+
+
+### Bug Fixes
+
+* **package-json:** + publish config ([d97dcb1](https://github.com/kitt-digital/vue-ts-kitt/commit/d97dcb144cb355fc598b54607ee1773021ef8d02))
+
 ## [1.14.2](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.14.1...v1.14.2) (2026-05-24)
 
 
