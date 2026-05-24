@@ -1,3 +1,14 @@
+## [1.14.4](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.14.3...v1.14.4) (2026-05-24)
+
+
+### Bug Fixes
+
+* **release:** ~ switch npm to pnpm ([e2fd1e4](https://github.com/kitt-digital/vue-ts-kitt/commit/e2fd1e4bb3c0721b06bec2d30c104afe1c86cd25))
+* **workflow:** + .npmrc ([0d212d5](https://github.com/kitt-digital/vue-ts-kitt/commit/0d212d525228e17d4793e82296e26f057b993fbc))
+* **workflow:** ~ .npmrc ([fa3e53b](https://github.com/kitt-digital/vue-ts-kitt/commit/fa3e53bfbbf7b7990be38d0142bdba56abeebc5f))
+* **workflow:** ~ .npmrc ([0c18e6e](https://github.com/kitt-digital/vue-ts-kitt/commit/0c18e6e575bb6cf01d6f0239ab0c4bfba8c6a775))
+* **workflow:** ~ pnpm ([c306864](https://github.com/kitt-digital/vue-ts-kitt/commit/c306864367b01bac3afe17cb79f73b814e10ae6b))
+
 ## [1.14.3](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.14.2...v1.14.3) (2026-05-24)
 
 
