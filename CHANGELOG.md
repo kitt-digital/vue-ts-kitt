@@ -1,3 +1,11 @@
+# [1.14.0](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.13.2...v1.14.0) (2026-05-24)
+
+
+### Bug Fixes
+
+* **packages:** ~ storybook ([31d3a14](https://github.com/kitt-digital/vue-ts-kitt/commit/31d3a14f7d2ccdaa43bc244db52897fdfd9e7791))
+* **workflow:** + hotfix npm install --legacy-peer-deps ([37d5299](https://github.com/kitt-digital/vue-ts-kitt/commit/37d52993fb816d2cf881d0b3ae5a847b99318248))
+
 ## [1.13.2](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.13.1...v1.13.2) (2026-05-24)
 
 
