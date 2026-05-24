@@ -14,7 +14,6 @@
   "devDependencies": {
     "@anolilab/semantic-release-pnpm": "^8.1.14",
     "@babel/types": "^7.29.0",
-    "@containerbase/semantic-release-pnpm": "^1.4.1",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^13.0.1",
     "@semantic-release/git": "^10.0.1",
@@ -37,7 +36,6 @@
     "eslint-plugin-vue": "^10.9.1",
     "prettier": "^3.8.3",
     "sass": "^1.99.0",
-    "semantic-release-pnpm": "^1.0.2",
     "storybook": "^10.4.0",
     "terser": "^5.48.0",
     "typescript": "^6.0.3",
