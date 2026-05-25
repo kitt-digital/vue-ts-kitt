@@ -61,6 +61,9 @@ export default defineConfig({
   build: {
     target: 'esnext',
     minify: 'terser',
+    commonjsOptions: {
+      esmExternals: true
+    },
     terserOptions: {
       ecma: 2020,
       format: {
