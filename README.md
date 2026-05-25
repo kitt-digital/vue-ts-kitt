@@ -45,8 +45,12 @@ import { Button } from 'vue-ts-kitt';
 </script>
 
 <style lang="scss">
-@import 'vue-ts-kitt/style.css';
+@import 'vue-ts-kitt/Button/style.css';
 </style>
+```
+Or import all sytles globally with
+```CSS
+@import 'vue-ts-kitt/style.css';
 ```
 
 # Working in the library
