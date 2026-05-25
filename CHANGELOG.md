@@ -1,3 +1,5 @@
+## [1.14.20](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.14.19...v1.14.20) (2026-05-25)
+
 ## [1.14.19](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.14.18...v1.14.19) (2026-05-25)
 
 ## [1.14.18](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.14.17...v1.14.18) (2026-05-25)
