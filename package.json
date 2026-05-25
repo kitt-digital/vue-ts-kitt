@@ -58,14 +58,14 @@
   "exports": {
     ".": {
       "module": "./dist/index.js",
-      "types": "./dist/index.d.ts",
-      "style": "./dist/style.css"
+      "types": "./dist/index.d.ts"
     },
     "./components/*": {
       "module": "./dist/components/*/index.js",
-      "types": "./dist/components/*/*.d.ts",
-      "style": "./dist/components/*/style.css"
-    }
+      "types": "./dist/components/*/*.d.ts"
+    },
+    "./style.css": "./dist/style.css",
+    "./components/*/style.css": "./dist/components/*/style.css"
   },
   "scripts": {
     "build": "vite build",
