@@ -59,13 +59,10 @@ export default defineConfig({
     }
   },
   build: {
-    target: 'esnext',
+    target: 'es2016',
     minify: 'terser',
-    commonjsOptions: {
-      esmExternals: true
-    },
     terserOptions: {
-      ecma: 2020,
+      ecma: 2016,
       format: {
         comments: false
       }
