@@ -48,10 +48,28 @@ import { Button } from 'vue-ts-kitt';
 @import 'vue-ts-kitt/Button/style.css';
 </style>
 ```
-Or import all sytles globally with
+## Global imports
+
+Import all styles in your `main.scss` file
 ```CSS
 @import 'vue-ts-kitt/style.css';
 ```
+
+Import all components globally and register them in your `main.ts` file
+```js
+import { createApp } from 'vue'
+
+import App from './App.vue'
+
+import * as kitt from 'vue-ts-kitt'
+const app = createApp(App)
+for (const [name, comp] of Object.entries(kitt)) {
+  app.component(name, comp)
+}
+
+app.mount('#app')
+```
+Afterwards, you don't have to import each component in each SFC file.
 
 # Working in the library
 
