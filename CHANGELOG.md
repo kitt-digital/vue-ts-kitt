@@ -1,3 +1,10 @@
+## [1.14.17](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.14.16...v1.14.17) (2026-05-25)
+
+
+### Bug Fixes
+
+* **vite:** ~ config ([f53759c](https://github.com/kitt-digital/vue-ts-kitt/commit/f53759cf030b6611cbed19f73d965204a68f0668))
+
 ## [1.14.16](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.14.15...v1.14.16) (2026-05-25)
 
 
