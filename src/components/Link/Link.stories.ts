@@ -13,13 +13,13 @@ const meta: Meta<typeof Link> = {
     docs: {
       description: {
         component: String(`
-          The \`<a>\` tag defines a hyperlink, which is used to link from one page to another. The most
-          important attribute of the \`<a>\` element is the \`href\` attribute, which indicates the link\'s
-          destination. Serveral elements can be used as the \`content\` of the \`<a>\` element, such as
-          \`text\`, \`images\`, or other \`HTML elements\` or \`Vue components/modules\`.
+          The Link component is based on an \`<a>\` tag, which defines a hyperlink used to link from one page to another.
+          The most important attribute of the \`<a>\` element is the \`href\` attribute, which indicates the link\'s
+          destination. Serveral elements can be used as \`content\` for an \`<a>\` element, such as \`text\`, \`images\`,
+          or other \`HTML elements\` or \`Vue components/modules\`.
           <br>
           <br>
-          The \`<a>\` tag has two required attributes:
+          The Link component has two required attributes:
           <br>
           \`href\` - Specifies the URL of the page the link goes to<br>
           \`target\` - Specifies where to open the linked document

@@ -13,11 +13,11 @@ const meta: Meta<typeof Image> = {
     docs: {
       description: {
         component: String(`
+          The Image component is based on an \`<img>\` tag, which creates a holding space for the referenced image.
           Images are not technically inserted into a web page; images are linked to web pages.
-          The \`<img>\` tag creates a holding space for the referenced image.
           <br>
           <br>
-          The \`<img>\` tag has two required attributes:
+          The Image component has two required attributes:
           <br>
           \`src\` - Specifies the path to the image<br>
           \`alt\` - Specifies an alternate text for the image, if the image for some reason cannot be displayed
