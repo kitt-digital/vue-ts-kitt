@@ -1,3 +1,10 @@
+## [1.15.8](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.15.7...v1.15.8) (2026-05-26)
+
+
+### Bug Fixes
+
+* **components:** ~ comments and descriptions ([ba76223](https://github.com/kitt-digital/vue-ts-kitt/commit/ba76223fb3eaee3941590d0447b124e59cc0bc8b))
+
 ## [1.15.7](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.15.6...v1.15.7) (2026-05-26)
 
 
