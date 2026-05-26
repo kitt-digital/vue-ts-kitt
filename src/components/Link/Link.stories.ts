@@ -56,10 +56,12 @@ type Story = StoryObj<typeof meta>;
  */
 export const Primary: Story = {
   args: {
+    href: i18n.href,
+    target: i18n.target,
     content: i18n.content,
     htmlAttributes: {
-      href: i18n.htmlAttributes.href,
-      target: i18n.htmlAttributes.target
+      rel: i18n.htmlAttributes.rel,
+      type: i18n.htmlAttributes.type
     }
   }
 };
@@ -69,6 +71,8 @@ import ImageI18n from '@/components/Image/Image-i18n.json';
 export const Secondary: Story = {
   name: 'Image',
   args: {
+    href: i18n.href,
+    target: i18n.target,
     content: shallowRef({
       ...Image,
       bind: {
@@ -77,8 +81,8 @@ export const Secondary: Story = {
       }
     }),
     htmlAttributes: {
-      href: i18n.htmlAttributes.href,
-      target: i18n.htmlAttributes.target
+      rel: i18n.htmlAttributes.rel,
+      type: i18n.htmlAttributes.type
     }
   }
 };

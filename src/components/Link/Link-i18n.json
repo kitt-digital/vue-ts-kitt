@@ -1,8 +1,9 @@
 {
+  "href": "#",
+  "target": "_blank",
   "content": "Click Me!",
   "htmlAttributes": {
-    "href": "#",
-    "target": "_blank",
-    "rel": "noopener noreferrer"
+    "rel": "alternate noopener noreferrer",
+    "type": "text/html"
   }
 }
