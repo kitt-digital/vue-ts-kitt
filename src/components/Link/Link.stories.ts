@@ -20,7 +20,13 @@ const meta: Meta<typeof Link> = {
           \`text\`, \`images\`, or other \`HTML elements\` or \`Vue components/modules\`.
           <br>
           <br>
-          <strong>Passing a component to the Link</strong>
+          The \`<a>\` tag has two required attributes:
+          <br>
+          \`href\` - Specifies the URL of the page the link goes to<br>
+          \`target\` - Specifies where to open the linked document
+          <br>
+          <br>
+          <b>Passing a component to the Link (two options)</b>
           <br>
           <code><br>
           \`<script setup lang="ts">\`<br>
@@ -29,16 +35,20 @@ const meta: Meta<typeof Link> = {
           \`</script>\`<br>
           <br>
           \`<template>\`<br>
-          &nbsp;&nbsp;\`<div class="greetings">\`<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;\`<h1>\`You’ve successfully created a project with\`</h1>\`<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;\`<Link :content="{ ...Image, bind: { src: '/src/assets/ai-generated-600x343.jpg', alt: 'alt text' } }"></Link>\`<br>
-          &nbsp;&nbsp;\`</div>\`<br>
+          <u><b>// #1</b></u><br>
+          \`<Link :href="'#'" :target="'_blank'">\`<br>
+          &nbsp;&nbsp;\`<Image :src="'src/assets/ai-generated-600x343.jpg'" :alt="'alt text'" />\`<br>
+          \`</Link>\`<br>
+          <u><b>// Or #2</b></u><br>
+          \`<Link\`<br>
+          &nbsp;&nbsp;:href="'#'"<br>
+          &nbsp;&nbsp;:target="'_blank'"<br>
+          &nbsp;&nbsp;:content="{ ...Image, bind: { src: 'src/assets/ai-generated-600x343.jpg', alt: 'alt text' } }"<br>
+          \`></Link>\`<br>
           \`</template>\`<br>
           </code><br>
           <br>
-          More attributes can be added with the \`htmlAttributes\` object.
-          <br>
-          <a href="https://www.w3schools.com/tAGS/tag_a.asp" target="_blank">more information</a>
+          Additional HTML attributes can be also added with the \`htmlAttributes\` object (<a href="https://www.w3schools.com/tAGS/tag_a.asp" target="_blank">possible attributes</a>).
         `)
           .replace(/\s+/g, ' ')
           .trim()
@@ -55,6 +65,7 @@ type Story = StoryObj<typeof meta>;
  * to learn how to use render functions.
  */
 export const Primary: Story = {
+  name: 'Text',
   args: {
     href: i18n.href,
     target: i18n.target,
