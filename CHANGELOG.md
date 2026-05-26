@@ -1,3 +1,16 @@
+# [1.15.0](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.14.20...v1.15.0) (2026-05-26)
+
+
+### Bug Fixes
+
+* **image:** - css scoped ([7ad2849](https://github.com/kitt-digital/vue-ts-kitt/commit/7ad284969b5c5ba5c51614632ecc2144127e0586))
+
+
+### Features
+
+* **assets:** + Mukta font ([475bf48](https://github.com/kitt-digital/vue-ts-kitt/commit/475bf48c316a1db73b327a25e87bdc00956f6ec0))
+* **components:** + Image component ([3060d62](https://github.com/kitt-digital/vue-ts-kitt/commit/3060d628859f207bfd608873edbff8cfa121098a))
+
 ## [1.14.20](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.14.19...v1.14.20) (2026-05-25)
 
 ## [1.14.19](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.14.18...v1.14.19) (2026-05-25)
