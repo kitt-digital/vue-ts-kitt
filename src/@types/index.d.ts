@@ -1,2 +1,3 @@
 export { default as Button } from './components/Button/Button';
 export { default as Link } from './components/Link/Link';
+export { default as Image } from './components/Image/Image';
