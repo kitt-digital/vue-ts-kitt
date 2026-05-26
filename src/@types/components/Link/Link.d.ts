@@ -1,10 +1,20 @@
 import { Component, AnchorHTMLAttributes, DefineComponent, ComponentOptionsMixin, PublicProps, ComponentProvideOptions } from 'vue';
 interface Props {
-    content: string | Component;
+    content?: string | Component;
     htmlAttributes?: AnchorHTMLAttributes;
 }
-declare const _default: DefineComponent<Props, {}, {}, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {}, string, PublicProps, Readonly<Props> & Readonly<{}>, {
+declare var __VLS_1: {};
+type __VLS_Slots = {} & {
+    default?: (props: typeof __VLS_1) => any;
+};
+declare const __VLS_component: DefineComponent<Props, {}, {}, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {}, string, PublicProps, Readonly<Props> & Readonly<{}>, {
     htmlAttributes: AnchorHTMLAttributes;
     content: string | Component;
 }, {}, {}, {}, string, ComponentProvideOptions, false, {}, any>;
+declare const _default: __VLS_WithSlots<typeof __VLS_component, __VLS_Slots>;
 export default _default;
+type __VLS_WithSlots<T, S> = T & {
+    new (): {
+        $slots: S;
+    };
+};
