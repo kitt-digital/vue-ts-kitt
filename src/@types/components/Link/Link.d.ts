@@ -1,6 +1,6 @@
 import { Component, AnchorHTMLAttributes, DefineComponent, ComponentOptionsMixin, PublicProps, ComponentProvideOptions } from 'vue';
 interface Props {
-    content?: string | Component;
+    content?: string | Component | undefined;
     htmlAttributes?: AnchorHTMLAttributes;
 }
 declare var __VLS_1: {};

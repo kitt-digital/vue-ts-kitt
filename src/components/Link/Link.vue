@@ -3,7 +3,7 @@
     <slot v-if="$slots.default"></slot>
     <span v-else-if="typeof content === 'string'" v-html="content"></span>
     <template v-else>
-      <component :is="content" v-bind="content.bind" />
+      <component :is="content" v-bind="content?.bind" />
     </template>
   </a>
 </template>
@@ -12,12 +12,12 @@
 import type { Component, AnchorHTMLAttributes } from 'vue';
 
 interface Props {
-  content?: string | Component;
+  content?: string | Component | undefined;
   htmlAttributes?: AnchorHTMLAttributes;
 }
 
 withDefaults(defineProps<Props>(), {
-  content: 'text',
+  content: undefined,
   htmlAttributes: () => ({
     href: '#',
     target: '_blank'
