@@ -1,12 +1,8 @@
 import { ImgHTMLAttributes, DefineComponent, ComponentOptionsMixin, PublicProps, ComponentProvideOptions } from 'vue';
-interface Props {
-    src: string;
-    alt: string;
-    htmlAttributes?: ImgHTMLAttributes;
+interface Props extends /* @vue-ignore */ ImgHTMLAttributes {
 }
 declare const _default: DefineComponent<Props, {}, {}, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {}, string, PublicProps, Readonly<Props> & Readonly<{}>, {
-    htmlAttributes: ImgHTMLAttributes;
-    src: string;
     alt: string;
+    src: string;
 }, {}, {}, {}, string, ComponentProvideOptions, false, {}, any>;
 export default _default;

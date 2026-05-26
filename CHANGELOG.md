@@ -1,3 +1,10 @@
+## [1.15.7](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.15.6...v1.15.7) (2026-05-26)
+
+
+### Bug Fixes
+
+* **components:** ~ typescript types ([bbc524f](https://github.com/kitt-digital/vue-ts-kitt/commit/bbc524fd55687d7460e6e35b7b65f739448e51bc))
+
 ## [1.15.6](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.15.5...v1.15.6) (2026-05-26)
 
 ## [1.15.5](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.15.4...v1.15.5) (2026-05-26)

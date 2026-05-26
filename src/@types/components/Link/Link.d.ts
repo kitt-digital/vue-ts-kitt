@@ -1,16 +1,14 @@
 import { Component, AnchorHTMLAttributes, DefineComponent, ComponentOptionsMixin, PublicProps, ComponentProvideOptions } from 'vue';
-interface Props {
+interface Props extends /* @vue-ignore */ AnchorHTMLAttributes {
     href: string;
     target: string;
     content?: string | Component | undefined;
-    htmlAttributes?: AnchorHTMLAttributes;
 }
 declare var __VLS_1: {};
 type __VLS_Slots = {} & {
     default?: (props: typeof __VLS_1) => any;
 };
 declare const __VLS_component: DefineComponent<Props, {}, {}, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {}, string, PublicProps, Readonly<Props> & Readonly<{}>, {
-    htmlAttributes: AnchorHTMLAttributes;
     href: string;
     target: string;
     content: string | Component;
