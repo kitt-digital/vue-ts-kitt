@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite';
-import type { ImgHTMLAttributes } from 'vue';
 
 import { default as Image } from './Image.vue';
 import i18n from './Image-i18n.json';
@@ -44,10 +43,6 @@ export const Primary: Story = {
   name: 'Image',
   args: {
     src: i18n.src,
-    alt: i18n.alt,
-    htmlAttributes: {
-      crossorigin: (i18n.htmlAttributes as ImgHTMLAttributes).crossorigin,
-      loading: (i18n.htmlAttributes as ImgHTMLAttributes).loading
-    }
+    alt: i18n.alt
   }
 };
