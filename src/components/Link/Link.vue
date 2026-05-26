@@ -1,5 +1,5 @@
 <template>
-  <a v-bind="{...htmlAttributes, ...$attrs}" :class="['kitt-link']">
+  <a v-bind="{...htmlAttributes, ...$attrs}" :class="['kitt-link']" :href="href">
     <slot v-if="$slots.default"></slot>
     <span v-else-if="typeof content === 'string'" v-html="content"></span>
     <template v-else>
@@ -12,11 +12,13 @@
 import type { Component, AnchorHTMLAttributes } from 'vue';
 
 interface Props {
+  href: string;
   content?: string | Component | undefined;
   htmlAttributes?: AnchorHTMLAttributes;
 }
 
 withDefaults(defineProps<Props>(), {
+  href: '#',
   content: undefined,
   htmlAttributes: () => ({
     href: '#',
