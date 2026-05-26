@@ -1,15 +1,16 @@
 <template>
-  <img :class="['kitt-img']" :src="src" :alt="alt">
+  <img :class="['kitt-img']" :src="src" :alt="alt" />
 </template>
 
 <script setup lang="ts">
 import type { ImgHTMLAttributes } from 'vue';
 
-interface Props extends ImgHTMLAttributes {}
+interface Props extends /* @vue-ignore */ ImgHTMLAttributes {}
 
 withDefaults(defineProps<Props>(), {
   src: 'path/to/source',
-  alt: 'alternate text'
+  alt: 'alternate text',
+  htmlAttributes: () => ({})
 });
 </script>
 

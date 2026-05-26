@@ -1,4 +1,3 @@
-import { shallowRef } from 'vue';
 import type { Meta, StoryObj } from '@storybook/vue3-vite';
 
 import { default as Link } from './Link.vue';
@@ -26,6 +25,9 @@ const meta: Meta<typeof Link> = {
           \`target\` - Specifies where to open the linked document
           <br>
           <br>
+          <a href="https://www.w3schools.com/tAGS/tag_a.asp" target="_blank">Additional optional attributes</a>
+          <br>
+          <br>
           <b>Passing a component to the Link (two options)</b>
           <br>
           <code><br>
@@ -48,8 +50,6 @@ const meta: Meta<typeof Link> = {
           \`></Link>\`<br>
           \`</template>\`<br>
           </code><br>
-          <br>
-          Additional HTML attributes can be also added with the \`:html-attributes=""\` property (<a href="https://www.w3schools.com/tAGS/tag_a.asp" target="_blank">possible attributes</a>).
         `)
           .replace(/\s+/g, ' ')
           .trim()
@@ -70,11 +70,7 @@ export const Primary: Story = {
   args: {
     href: i18n.href,
     target: i18n.target,
-    content: i18n.content,
-    htmlAttributes: {
-      rel: i18n.htmlAttributes.rel,
-      type: i18n.htmlAttributes.type
-    }
+    content: i18n.content
   }
 };
 
@@ -85,16 +81,12 @@ export const Secondary: Story = {
   args: {
     href: i18n.href,
     target: i18n.target,
-    content: shallowRef({
+    content: {
       ...Image,
       bind: {
         src: ImageI18n.src,
         alt: ImageI18n.alt
       }
-    }),
-    htmlAttributes: {
-      rel: i18n.htmlAttributes.rel,
-      type: i18n.htmlAttributes.type
     }
   }
 };
