@@ -1,26 +1,30 @@
 <template>
-  <a v-bind="htmlAttributes" :class="['kitt-link']">{{ text }}</a>
+  <a v-bind="{...htmlAttributes, ...$attrs}" :class="['kitt-link']">
+    <span v-if="typeof content === 'string'" v-html="content"></span>
+    <template v-else>
+      <component :is="content" v-bind="content.bind" />
+    </template>
+  </a>
 </template>
 
 <script setup lang="ts">
-import i18n from './Link-i18n.json';
-import type { LinkHTMLAttributes } from 'vue';
+import type { Component } from 'vue'
+import type { AnchorHTMLAttributes } from 'vue';
 
 interface Props {
-  text: string;
-  htmlAttributes?: LinkHTMLAttributes;
+  content: string | Component;
+  htmlAttributes?: AnchorHTMLAttributes;
 }
 
 withDefaults(defineProps<Props>(), {
-  text: i18n.text,
+  content: 'text',
   htmlAttributes: () => ({
-    href: i18n.htmlAttributes.href,
-    target: i18n.htmlAttributes.target,
-    rel: i18n.htmlAttributes.rel
+    href: '#',
+    target: '_blank'
   })
 });
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @use './Link';
 </style>

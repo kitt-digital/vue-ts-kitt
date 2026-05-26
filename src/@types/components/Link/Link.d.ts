@@ -1,10 +1,10 @@
-import { LinkHTMLAttributes, DefineComponent, ComponentOptionsMixin, PublicProps, ComponentProvideOptions } from 'vue';
+import { Component, AnchorHTMLAttributes, DefineComponent, ComponentOptionsMixin, PublicProps, ComponentProvideOptions } from 'vue';
 interface Props {
-    text: string;
-    htmlAttributes?: LinkHTMLAttributes;
+    content: Component | string;
+    htmlAttributes?: AnchorHTMLAttributes;
 }
 declare const _default: DefineComponent<Props, {}, {}, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {}, string, PublicProps, Readonly<Props> & Readonly<{}>, {
-    text: string;
-    htmlAttributes: LinkHTMLAttributes;
+    htmlAttributes: AnchorHTMLAttributes;
+    content: Component | string;
 }, {}, {}, {}, string, ComponentProvideOptions, false, {}, any>;
 export default _default;
