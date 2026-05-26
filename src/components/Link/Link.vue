@@ -1,6 +1,7 @@
 <template>
   <a v-bind="{...htmlAttributes, ...$attrs}" :class="['kitt-link']">
-    <span v-if="typeof content === 'string'" v-html="content"></span>
+    <slot v-if="$slots.default"></slot>
+    <span v-else-if="typeof content === 'string'" v-html="content"></span>
     <template v-else>
       <component :is="content" v-bind="content.bind" />
     </template>
@@ -8,11 +9,10 @@
 </template>
 
 <script setup lang="ts">
-import type { Component } from 'vue'
-import type { AnchorHTMLAttributes } from 'vue';
+import type { Component, AnchorHTMLAttributes } from 'vue';
 
 interface Props {
-  content: string | Component;
+  content?: string | Component;
   htmlAttributes?: AnchorHTMLAttributes;
 }
 

@@ -20,6 +20,22 @@ const meta: Meta<typeof Link> = {
           \`text\`, \`images\`, or other \`HTML elements\` or \`Vue components/modules\`.
           <br>
           <br>
+          <strong>Passing a component to the Link</strong>
+          <br>
+          <code><br>
+          \`<script setup lang="ts">\`<br>
+          &nbsp;&nbsp;import { Link } from 'vue-ts-kitt'<br>
+          &nbsp;&nbsp;import { Image } from 'vue-ts-kitt'<br>
+          \`</script>\`<br>
+          <br>
+          \`<template>\`<br>
+          &nbsp;&nbsp;\`<div class="greetings">\`<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;\`<h1>\`You’ve successfully created a project with\`</h1>\`<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;\`<Link :content="{ ...Image, bind: { src: '/src/assets/ai-generated-600x343.jpg', alt: 'alt text' } }"></Link>\`<br>
+          &nbsp;&nbsp;\`</div>\`<br>
+          \`</template>\`<br>
+          </code><br>
+          <br>
           More attributes can be added with the \`htmlAttributes\` object.
           <br>
           <a href="https://www.w3schools.com/tAGS/tag_a.asp" target="_blank">more information</a>
