@@ -24,7 +24,7 @@ const meta: Meta<typeof Image> = {
           \`alt\` - Specifies an alternate text for the image, if the image for some reason cannot be displayed
           <br>
           <br>
-          Additional HTML attributes can be also added with the \`htmlAttributes\` object (<a href="https://www.w3schools.com/tAGS/tag_img.asp" target="_blank">possible attributes</a>).
+          Additional HTML attributes can be also added with the \`:html-attributes=""\` property (<a href="https://www.w3schools.com/tAGS/tag_img.asp" target="_blank">possible attributes</a>).
         `)
           .replace(/\s+/g, ' ')
           .trim()

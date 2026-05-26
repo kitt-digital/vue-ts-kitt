@@ -35,20 +35,21 @@ const meta: Meta<typeof Link> = {
           \`</script>\`<br>
           <br>
           \`<template>\`<br>
-          <u><b>// #1</b></u><br>
+          <u><b style="color: #cc33cc">// #1</b></u><br>
           \`<Link :href="'#'" :target="'_blank'">\`<br>
-          &nbsp;&nbsp;\`<Image :src="'src/assets/ai-generated-600x343.jpg'" :alt="'alt text'" />\`<br>
+          &nbsp;&nbsp;\`<Image :src="'images/ai-generated-600x343.jpg'" :alt="'alt text'" />\`<br>
           \`</Link>\`<br>
-          <u><b>// Or #2</b></u><br>
+          <u><b style="color: #cc33cc">// Or #2</b></u><br>
           \`<Link\`<br>
           &nbsp;&nbsp;:href="'#'"<br>
           &nbsp;&nbsp;:target="'_blank'"<br>
-          &nbsp;&nbsp;:content="{ ...Image, bind: { src: 'src/assets/ai-generated-600x343.jpg', alt: 'alt text' } }"<br>
+          &nbsp;&nbsp;:content="{ ...Image, bind: { src: 'images/ai-generated-600x343.jpg', alt: 'alt text' } }"<br>
+          &nbsp;&nbsp;:html-attributes="{ rel: "alternate" }"
           \`></Link>\`<br>
           \`</template>\`<br>
           </code><br>
           <br>
-          Additional HTML attributes can be also added with the \`htmlAttributes\` object (<a href="https://www.w3schools.com/tAGS/tag_a.asp" target="_blank">possible attributes</a>).
+          Additional HTML attributes can be also added with the \`:html-attributes=""\` property (<a href="https://www.w3schools.com/tAGS/tag_a.asp" target="_blank">possible attributes</a>).
         `)
           .replace(/\s+/g, ' ')
           .trim()

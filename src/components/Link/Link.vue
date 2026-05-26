@@ -1,5 +1,5 @@
 <template>
-  <a v-bind="{...htmlAttributes, ...$attrs}" :class="['kitt-link']" :href="href" :target="target">
+  <a v-bind="{ ...htmlAttributes }" :class="['kitt-link']" :href="href" :target="target">
     <slot v-if="$slots.default"></slot>
     <span v-else-if="typeof content === 'string'" v-html="content"></span>
     <template v-else>
