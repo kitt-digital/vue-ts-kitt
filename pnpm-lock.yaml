@@ -14,6 +14,9 @@ importers:
       portfinder:
         specifier: ^1.0.38
         version: 1.0.38
+      typescript:
+        specifier: ^6.0.3
+        version: 6.0.3
       vue:
         specifier: ^3.5.34
         version: 3.5.34(typescript@6.0.3)
@@ -96,9 +99,6 @@ importers:
       terser:
         specifier: ^5.48.0
         version: 5.48.0
-      typescript:
-        specifier: ^6.0.3
-        version: 6.0.3
       unplugin-dts:
         specifier: ^1.0.1
         version: 1.0.1(esbuild@0.27.7)(rolldown@1.0.0)(typescript@6.0.3)(vite@8.0.12(@types/node@25.7.0)(esbuild@0.27.7)(sass@1.99.0)(terser@5.48.0)(yaml@2.9.0))
