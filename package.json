@@ -1,7 +1,7 @@
 {
   "name": "vue-ts-kitt",
   "version": "1.15.8",
-  "description": "Vue 3 / TypeScript 5 library for UI components / modules",
+  "description": "Vue 3 / TypeScript 6 library for UI components / modules",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kitt-digital/vue-ts-kitt.git"
@@ -46,7 +46,7 @@
     "express": "^5.2.1",
     "portfinder": "^1.0.38",
     "typescript": "^6.0.3",
-    "vue": "^3.5.34"
+    "vue": "^3.5.35"
   },
   "type": "module",
   "files": [
@@ -60,11 +60,11 @@
       "module": "./dist/index.js",
       "types": "./dist/index.d.ts"
     },
+    "./style.css": "./dist/style.css",
     "./components/*": {
       "module": "./dist/components/*/index.js",
       "types": "./dist/components/*/*.d.ts"
     },
-    "./style.css": "./dist/style.css",
     "./components/*/style.css": "./dist/components/*/style.css"
   },
   "scripts": {
