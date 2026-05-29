@@ -1,4 +1,4 @@
-# Fine-grained personal access tokens
+# Configuration of fine-grained personal access tokens
 # Repository permissions:
 #   Read access: actions, variables, metadata, secrets
 #   Read and Write access: contents, commit statuses, issues, pull requests
