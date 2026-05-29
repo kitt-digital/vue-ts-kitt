@@ -58,7 +58,7 @@ Note: If you import multiple component CSS files in multiple Vue files, it is re
 @use 'vue-ts-kitt/Link/style.css';
 ```
 
-The library includes the <a href="https://fonts.google.com/specimen/Mukta" target="_blank">Mukta font (Google fonts)</a>. If you want to use it, please import the font-face.css file as follows:
+The library includes the [Mukta font (Google fonts)](https://fonts.google.com/specimen/Mukta). If you want to use it, please import the font-face.css file as follows:
 ```css
 @use 'vue-ts-kitt/font-face.css';
 ```
