@@ -88,15 +88,29 @@ Afterwards, you don't have to import each component in each SFC file.
 
 # Working in the library
 
-All components / modules are documented in Storybook. After cloning the library, just call `npm link` to create a symlink to the `bin/vue-ts-docs.js` file and call the following script to open the docs.
+All components / modules are documented in Storybook.
+```shell
+pnpm storybook
+```
 
+## Git Hooks
+
+It is necessary to set the custom hook directory after each clone. To do so, you need to call the following command.
+```shell
+git config core.hooksPath .hooks
+```
+Afterwards, the `commit-msg` hook inside the `./.hooks` directory will `lint` your `commit messages`.
+
+## Bin command
+
+After cloning the library create the output with `pnpm build` and `pnpm build-storybook`. Call `npm link` to create a symlink to the `bin/vue-ts-docs.js` file and try to call the following script to open the docs via the bin file.
 ```shell
 vue-ts-docs
 ```
 
 ### Troubleshoot
 
-If something went wrong, e.g. you get a permission denied error or anything else, just delete the `node_modules` directory or the symlink directory / file in the global folders (e.g. `~/.npm/_npx` or `~/.nvm/versions/node/v24.14.1/bin`) and call the `npm link` command again. Solves very often the issue.
+If something went wrong, e.g. you get a permission denied error or anything else, just delete the `node_modules` directory or the symlink directory / file in the global folders (e.g. `~/.npm/_npx` or `~/.nvm/versions/node/v24.14.1/bin`) and call the `npm link` command again. It solves very often the issue.
 
 Or add the following script to the scripts section in the `package.json` file.
 ```json
@@ -106,14 +120,6 @@ Or add the following script to the scripts section in the `package.json` file.
   }
 }
 ```
-
-## Git Hooks
-
-It is necessary to set the custom hook directory after each clone. To do so, you need to call the following command.
-```shell
-git config core.hooksPath .hooks
-```
-Afterward, the `commit-msg` hook inside the `./.hooks` directory will `lint` your `commit messages`.
 
 ## Semantic Release
 It is used to automate the package release workflow by your commit messages.
