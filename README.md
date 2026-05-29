@@ -1,8 +1,6 @@
-# Vue 3 / TypeScript 5 library for UI components / modules
+# Vue 3 / TypeScript 6 library for UI components / modules
 
-Another Vue 3 component / module library that includes TypeScript 5 and is bundled by Vite.
-
-# ⚠️ Library is still in progress and is not finalised
+Another Vue 3 component / module library that includes TypeScript 6 and is bundled by Vite.
 
 ## Install
 
@@ -32,11 +30,12 @@ yarn exec vue-ts-docs
 
 ## Usage
 
+This example shows how to import a single component of the library.
 ```vue
 <template>
   <div>
     my project + vue-ts-kitt
-    <Button :html-attributes="{ name: 'my-button' }" :text="'test'" />
+    <Button :html-attributes="{ name: 'my-button' }" :text="'Button'" />
   </div>
 </template>
 
@@ -45,29 +44,45 @@ import { Button } from 'vue-ts-kitt';
 </script>
 
 <style lang="scss">
-@import 'vue-ts-kitt/Button/style.css';
+@use 'vue-ts-kitt/vars.css';
+@use 'vue-ts-kitt/Button/style.css';
 </style>
 ```
-## Global imports
 
-Import all styles in your `main.scss` file
-```CSS
-@import 'vue-ts-kitt/style.css';
+Note: If you import multiple component CSS files in multiple Vue files, it is recomanded to import the styles globally.
+```css
+/* main.scss file */
+@use 'vue-ts-kitt/vars.css';
+@use 'vue-ts-kitt/Button/style.css';
+@use 'vue-ts-kitt/Link/style.css';
 ```
 
-Import all components globally and register them in your `main.ts` file
+The library includes the [Mukta font (Google fonts)](https://fonts.google.com/specimen/Mukta). If you want to use it, please import the font-face.css file as follows:
+```css
+@use 'vue-ts-kitt/font-face.css';
+```
+
+## Global imports
+
+Import all styles in your main style file (incl. Mukta font).
+```css
+/* main.scss file */
+@use 'vue-ts-kitt/style.css';
+```
+
+Register all components/modules globally in your main JS/TS file
 ```js
-import { createApp } from 'vue'
+// main.ts file
+import { createApp } from 'vue';
+import App from './App.vue';
 
-import App from './App.vue'
-
-import * as kitt from 'vue-ts-kitt'
-const app = createApp(App)
+import * as kitt from 'vue-ts-kitt';
+const app = createApp(App);
 for (const [name, comp] of Object.entries(kitt)) {
-  app.component(name, comp)
+  app.component(name, comp);
 }
 
-app.mount('#app')
+app.mount('#app');
 ```
 Afterwards, you don't have to import each component in each SFC file.
 
@@ -128,7 +143,7 @@ The format of your commit message must match the following rules to make it inte
 | `fix(no-release): - button bg-color` | false | Ignored by semantic release, to create test cases |
 | `feat(breaking): + button icon.image property` | major | Use this scope for a breacking change |
 
-<sub>Note: It is not required to write specific scopes. The values major, minor and patch defines the version as followed: v1.1.1 === v(`major`).(`minor`).(`patch`)</sub>
+<sub>Note: It is not required to write scopes. The values major, minor and patch defines the version as follows: v1.1.1 === v(`major`).(`minor`).(`patch`)</sub>
 
 | `<symbols>` | Description |
 | :---: | :--- |
