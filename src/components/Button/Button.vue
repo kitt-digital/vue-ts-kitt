@@ -10,7 +10,7 @@
   </button>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 import type { ButtonHTMLAttributes } from 'vue';
 import i18n from './Button-i18n.json';
 

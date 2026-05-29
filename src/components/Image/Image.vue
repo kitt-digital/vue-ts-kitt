@@ -2,7 +2,7 @@
   <img :class="['kitt-img']" :src="src" :alt="alt" />
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 import type { ImgHTMLAttributes } from 'vue';
 
 // Note: All HTML attributes are optional

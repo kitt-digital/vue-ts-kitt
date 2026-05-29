@@ -8,7 +8,7 @@
   </a>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 import type { Component, AnchorHTMLAttributes } from 'vue';
 
 // Note: All HTML attributes are optional

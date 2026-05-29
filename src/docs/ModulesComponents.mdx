@@ -3,13 +3,21 @@ import { Meta } from '@storybook/addon-docs/blocks';
 <Meta title="Modules & Components" />
 
 ### All available imports
-```js
-import { Button } from 'vue-ts-kitt';
-// css
-@import 'vue-ts-kitt/Button/style.css';
+```html
+<script lang="ts" setup>
+  import { Link } from 'vue-ts-kitt';
+</script>
+
+<style lang="scss">
+  @use 'vue-ts-kitt/Link/style.css';
+</style>
 ```
-```js
-import { Link } from 'vue-ts-kitt';
-// css
-@import 'vue-ts-kitt/Link/style.css';
+```html
+<script lang="ts" setup>
+  import { Image } from 'vue-ts-kitt';
+</script>
+
+<style lang="scss">
+  @use 'vue-ts-kitt/Image/style.css';
+</style>
 ```

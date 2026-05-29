@@ -37,20 +37,22 @@ const meta: Meta<typeof Link> = {
           \`</script>\`<br>
           <br>
           \`<template>\`<br>
-          <u><b class="kitt-info">// #1</b></u><br>
+          <b class="kitt-info">// #1</b><br>
           \`<Link :href="'#'" :target="'_blank'">\`<br>
           &nbsp;&nbsp;\`<Image :src="'images/ai-generated-600x343.jpg'" :alt="'alt text'" />\`<br>
           \`</Link>\`<br>
-          <u><b class="kitt-info">// Or #2</b></u><br>
+          <b class="kitt-info">// Or #2</b><br>
           \`<Link\`<br>
           &nbsp;&nbsp;:href="'#'"<br>
           &nbsp;&nbsp;:target="'_blank'"<br>
           &nbsp;&nbsp;:content="{ ...Image, bind: { src: 'images/ai-generated-600x343.jpg', alt: 'alt text' } }"<br>
           &nbsp;&nbsp;:html-attributes="{ rel: "alternate" }"
           \`></Link>\`<br>
-          \`</template>\`<br>
-          </code><br>
-          Note: If you include a component as content object, you have to use the \`content<u class="kitt-info">.bind</u>\` key to pass \`Props\` to the component.
+          \`</template>\`<br><br>
+          </code>
+          <br>
+          <br>
+          Note: If you include a component as content object, you have to use the \`content.bind\` key to pass \`Props\` to the component.
         `)
           .replace(/\s+/g, ' ')
           .trim()
