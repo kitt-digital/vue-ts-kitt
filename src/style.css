@@ -1,6 +1,10 @@
 /**
  * This file is the main entry point for all styles of the component library.
- * It imports all styles from each component as CSS file.
+ */
+@import "./vars.css";
+@import "./font-face.css";
+/**
+ * Component styles
  */
 @import "./components/Button/style.css";
 @import "./components/Link/style.css";

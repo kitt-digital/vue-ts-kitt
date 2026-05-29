@@ -58,7 +58,7 @@ const config: StorybookConfig = {
         output: {
           entryFileNames: `[name].js`,
           chunkFileNames: `[name].js`,
-          assetFileNames: `[name].[ext]`,
+          assetFileNames: `assets/[name].[ext]`,
           globals: {
             vue: 'Vue'
           },

@@ -1,3 +1,10 @@
+@import "../src/vars.css";
+@import "../src/assets/font-face.css";
+
+.kitt-info {
+  color: #CC33CC;
+}
+
 code code {
   border: none!important;
   background-color: transparent!important;
