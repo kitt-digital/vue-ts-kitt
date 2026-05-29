@@ -46,7 +46,7 @@ do
       else
         echo "\n[ERROR]: Commit linter";
         echo "[ERROR]: The <scope> contains an illegal character!";
-        echo "[ERROR]: Only the following characters are accepted: [- a-z A-Z]";
+        echo "[ERROR]: Only the following characters are accepted: [a-zA-Z-]";
         echo "$ERROR_MESSAGE";
         echo "\n[COMMIT_MESSAGE]:\n$COMMIT_MESSAGE";
         exit 1;
