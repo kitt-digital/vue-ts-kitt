@@ -1,4 +1,4 @@
-# Vue 3 / TypeScript 6 library for UI components / modules
+# Vue 3 / TypeScript 6<br>Library for UI components / modules
 
 Another Vue 3 component / module library that includes TypeScript 6 and is bundled by Vite.
 
@@ -57,7 +57,7 @@ Note: If you import multiple component CSS files in multiple Vue files, it is re
 @use 'vue-ts-kitt/Link/style.css';
 ```
 
-The library includes the [Mukta font (Google fonts)](https://fonts.google.com/specimen/Mukta). If you want to use it, please import the font-face.css file as follows:
+The library includes the <a href="https://fonts.google.com/specimen/Mukta" target="_blank">Mukta font (Google fonts)</a>. If you want to use it, please import the font-face.css file as follows:
 ```css
 @use 'vue-ts-kitt/font-face.css';
 ```
@@ -142,14 +142,14 @@ The format of your commit message must match the following rules to make it inte
 | `style(components): - button bg-color` | patch | For specific styles / CSS changes |
 | `test(components): ~ button bg-color` | false | Ignored by semantic release, to create test cases |
 
-<sub>Note: It is not necessary to define a scope. You can write each `commit message type` also without a scope (`fix: ~ button icon property`).</sub>
+<sub>Note: You can write each `commit message type` also without a scope (`fix: ~ button icon property`).</sub>
 
 | Commit message `<scopes>` | Value | Description |
 | :--- | - | :--- |
 | `fix(no-release): - button bg-color` | false | Ignored by semantic release, to create test cases |
 | `feat(breaking): + button icon.image property` | major | Use this scope for a breacking change |
 
-<sub>Note: It is not required to write scopes. The values major, minor and patch defines the version as follows: v1.1.1 === v(`major`).(`minor`).(`patch`)</sub>
+<sub>Note: The values major, minor and patch defines the version as follows: v1.1.1 === v(`major`).(`minor`).(`patch`)</sub>
 
 | `<symbols>` | Description |
 | :---: | :--- |
