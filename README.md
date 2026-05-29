@@ -1,6 +1,7 @@
-# Vue 3 / TypeScript 6<br>Library for UI components / modules
+### Vue 3 / TypeScript 6
+# Library for UI components / modules
 
-Another Vue 3 component / module library that includes TypeScript 6 and is bundled by Vite.
+Another Vue 3 component / module library with TypeScript 6 and bundled by Vite.
 
 ## Install
 
