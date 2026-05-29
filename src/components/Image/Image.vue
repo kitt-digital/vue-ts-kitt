@@ -5,11 +5,10 @@
 <script setup lang="ts">
 import type { ImgHTMLAttributes } from 'vue';
 
+// Note: All HTML attributes are optional
 interface Props extends /* @vue-ignore */ ImgHTMLAttributes {
-  /* required attributes */
   src: string;
   alt: string;
-  /* optional attributes */
 }
 
 withDefaults(defineProps<Props>(), {

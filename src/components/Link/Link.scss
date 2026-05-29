@@ -1,6 +1,4 @@
-@use '@/base';
-
 .kitt-link {
-  font-family: base.$font-family;
-  color: base.$info;
+  font-family: var(--kitt-font-family);
+  color: var(--kitt-color-info);
 }
