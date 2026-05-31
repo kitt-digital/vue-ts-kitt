@@ -1,3 +1,10 @@
+## [1.17.4](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.17.3...v1.17.4) (2026-05-31)
+
+
+### Bug Fixes
+
+* **components:** ~ Button ([f720e25](https://github.com/kitt-digital/vue-ts-kitt/commit/f720e2539e08d2f9b960963808059b2723a5c283))
+
 ## [1.17.3](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.17.2...v1.17.3) (2026-05-31)
 
 ## [1.17.2](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.17.1...v1.17.2) (2026-05-31)
