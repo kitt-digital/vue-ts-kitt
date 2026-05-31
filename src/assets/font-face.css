@@ -1,6 +1,6 @@
 /* devanagari */
 @font-face {
-  font-family: 'Mukta';
+  font-family: 'Mukta_devanagari';
   font-style: normal;
   font-weight: 200;
   font-display: swap;
@@ -9,7 +9,7 @@
 }
 /* latin-ext */
 @font-face {
-  font-family: 'Mukta';
+  font-family: 'Mukta_latin-ext';
   font-style: normal;
   font-weight: 200;
   font-display: swap;
@@ -27,7 +27,7 @@
 }
 /* devanagari */
 @font-face {
-  font-family: 'Mukta';
+  font-family: 'Mukta_devanagari';
   font-style: normal;
   font-weight: 300;
   font-display: swap;
@@ -36,7 +36,7 @@
 }
 /* latin-ext */
 @font-face {
-  font-family: 'Mukta';
+  font-family: 'Mukta_latin-ext';
   font-style: normal;
   font-weight: 300;
   font-display: swap;
@@ -54,7 +54,7 @@
 }
 /* devanagari */
 @font-face {
-  font-family: 'Mukta';
+  font-family: 'Mukta_devanagari';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -63,7 +63,7 @@
 }
 /* latin-ext */
 @font-face {
-  font-family: 'Mukta';
+  font-family: 'Mukta_latin-ext';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -81,7 +81,7 @@
 }
 /* devanagari */
 @font-face {
-  font-family: 'Mukta';
+  font-family: 'Mukta_devanagari';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
@@ -90,7 +90,7 @@
 }
 /* latin-ext */
 @font-face {
-  font-family: 'Mukta';
+  font-family: 'Mukta_latin-ext';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
@@ -108,7 +108,7 @@
 }
 /* devanagari */
 @font-face {
-  font-family: 'Mukta';
+  font-family: 'Mukta_devanagari';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
@@ -117,7 +117,7 @@
 }
 /* latin-ext */
 @font-face {
-  font-family: 'Mukta';
+  font-family: 'Mukta_latin-ext';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
@@ -135,7 +135,7 @@
 }
 /* devanagari */
 @font-face {
-  font-family: 'Mukta';
+  font-family: 'Mukta_devanagari';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -144,7 +144,7 @@
 }
 /* latin-ext */
 @font-face {
-  font-family: 'Mukta';
+  font-family: 'Mukta_latin-ext';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -162,7 +162,7 @@
 }
 /* devanagari */
 @font-face {
-  font-family: 'Mukta';
+  font-family: 'Mukta_devanagari';
   font-style: normal;
   font-weight: 800;
   font-display: swap;
@@ -171,7 +171,7 @@
 }
 /* latin-ext */
 @font-face {
-  font-family: 'Mukta';
+  font-family: 'Mukta_latin-ext';
   font-style: normal;
   font-weight: 800;
   font-display: swap;
