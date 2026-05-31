@@ -12,7 +12,6 @@ const meta: Meta<typeof Button> = {
     size: { control: 'select', options: ['small', 'medium', 'large'] }
   },
   args: {
-    primary: false
     // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
   }
 };
@@ -25,8 +24,32 @@ type Story = StoryObj<typeof meta>;
  * to learn how to use render functions.
  */
 export const Primary: Story = {
+  name: 'Button',
   args: {
-    primary: true,
-    text: 'Button'
+    text: 'Button',
+    secondary: false,
+    size: 'medium',
+    pill: false,
+    outlineStyle: false
+  }
+};
+
+export const Pill: Story = {
+  args: {
+    text: 'Button',
+    secondary: true,
+    size: 'small',
+    pill: true,
+    outlineStyle: false
+  }
+};
+
+export const OutlineStyle: Story = {
+  args: {
+    text: 'Button',
+    secondary: true,
+    size: 'large',
+    pill: true,
+    outlineStyle: true
   }
 };

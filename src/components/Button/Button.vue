@@ -2,8 +2,10 @@
   <button
     :class="[
       'kitt-button',
-      primary ? 'kitt-button--primary' : null,
-      size ? `kitt-button--${size}` : null
+      secondary ? 'kitt-button--secondary' : 'kitt-button--primary',
+      size ? `kitt-button--${size}` : null,
+      pill ? `kitt-button--pill` : null,
+      outlineStyle ? `kitt-button--outline-style` : null
     ]"
   >
     {{ text }}
@@ -16,14 +18,14 @@ import i18n from './Button-i18n.json';
 
 // Note: All HTML attributes are optional
 interface Props extends /* @vue-ignore */ ButtonHTMLAttributes {
-  primary?: boolean;
+  secondary?: boolean;
+  pill?: boolean;
+  outlineStyle?: boolean;
   size?: 'small' | 'medium' | 'large';
   text: string;
 }
 
 withDefaults(defineProps<Props>(), {
-  primary: true,
-  size: 'medium',
   text: i18n.text
 });
 </script>

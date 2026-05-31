@@ -1,20 +1,72 @@
 .kitt-button {
-  background-color: green;
+  position: relative;
+  outline: none;
+  cursor: pointer;
 
-  &--primary {
-    background-color: blue;
+  color: var(--kitt-color-white);
+  font-family: var(--kitt-font-family);
+  font-size: var(--kitt-font-size-normal);
+  font-weight: 600;
+
+  border: none;
+  border-radius: 5px;
+  background-color: var(--kitt-color-primary);
+  padding: var(--kitt-space-extra-small) var(--kitt-space-normal);
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    height: 1.5px;
+    width: 0%;
+    background-color: var(--kitt-color-background);
+
+    transition-property: left, width;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-out;
+  }
+
+  transition-property: color, border-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+
+  &:hover, &--secondary.kitt-button--outline-style:hover {
+    color: var(--kitt-color-background);
+    border-color: var(--kitt-color-background);
+
+    &::after {
+      left: var(--kitt-space-normal);
+      width: calc(100% - (var(--kitt-space-normal) * 2));
+    }
+  }
+
+  &--secondary {
+    background-color: var(--kitt-color-secondary);
+
+    &.kitt-button--outline-style {
+      color: var(--kitt-color-secondary);
+      border: 2px solid var(--kitt-color-secondary);
+    }
+  }
+
+  &--outline-style {
+    background-color: transparent;
+    color: var(--kitt-color-primary);
+    border: 2px solid var(--kitt-color-primary);
+  }
+
+  &--pill {
+    border-radius: 100vh; /* keep pill shape */
   }
 
   &--small {
-    font-size: 12px;
-    padding: 10px 16px;
+    font-size: var(--kitt-font-size-small);
+    padding: calc(var(--kitt-space-extra-small) - 4px) var(--kitt-space-small);
   }
-  &--medium {
-    font-size: 14px;
-    padding: 11px 20px;
-  }
+
   &--large {
-    font-size: 16px;
-    padding: 12px 24px;
+    font-size: var(--kitt-font-size-medium);
   }
 }
