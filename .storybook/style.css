@@ -9,3 +9,26 @@ code code {
   border: none!important;
   background-color: transparent!important;
 }
+
+sub {
+  font-family: "Nunito Sans", -apple-system, ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#storybook-docs table {
+  width: 100%;
+}
+
+#storybook-docs table tr th,
+#storybook-docs table tr td {
+  text-align: left;
+}
+
+#storybook-docs table tr th:nth-child(2),
+#storybook-docs table tr td:nth-child(2) {
+  text-align: center;
+}
+
+#storybook-docs table tr th:last-child,
+#storybook-docs table tr td:last-child {
+  width: 100%
+}

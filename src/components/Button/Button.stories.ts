@@ -13,12 +13,12 @@ const meta: Meta<typeof Button> = {
       description: {
         component: String(`
           The Button component is based on the \`<button>\` tag, which defines a clickable button.
-          Always specify the \`type\` attribute for the Button component, to tell browsers what type of button it is.
+          Specify the \`type\` attribute for the Button component, to tell browsers what type of button it is (button, reset, submit)
           <br>
           <br>
           The Button component has only one required attribute:
           <br>
-          \`text\` - Specifies the text that is wrapped by the \`<button>\`
+          \`text\` - Specifies the text that is displayed
           <br>
           <br>
           <a href="https://www.w3schools.com/tAGS/tag_button.asp" target="_blank">Additional optional attributes</a>
