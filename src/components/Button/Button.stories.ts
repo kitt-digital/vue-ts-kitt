@@ -8,6 +8,27 @@ const meta: Meta<typeof Button> = {
   component: Button,
   // This component will have an automatically generated docsPage entry: https://storybook.js.org/docs/writing-docs/autodocs
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: String(`
+          The Button component is based on the \`<button>\` tag, which defines a clickable button.
+          Always specify the \`type\` attribute for the Button component, to tell browsers what type of button it is.
+          <br>
+          <br>
+          The Button component has only one required attribute:
+          <br>
+          \`text\` - Specifies the text that is wrapped by the \`<button>\`
+          <br>
+          <br>
+          <a href="https://www.w3schools.com/tAGS/tag_button.asp" target="_blank">Additional optional attributes</a>
+          <br>
+        `)
+          .replace(/\s+/g, ' ')
+          .trim()
+      }
+    }
+  },
   argTypes: {
     size: { control: 'select', options: ['small', 'medium', 'large'] }
   },

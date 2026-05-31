@@ -32,7 +32,7 @@
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
 
-  &:hover, &--secondary.kitt-button--outline-style:hover {
+  &:hover  {
     color: var(--kitt-color-background);
     border-color: var(--kitt-color-background);
 
@@ -44,29 +44,49 @@
 
   &--secondary {
     background-color: var(--kitt-color-secondary);
-
-    &.kitt-button--outline-style {
-      color: var(--kitt-color-secondary);
-      border: 2px solid var(--kitt-color-secondary);
-    }
   }
 
   &--outline-style {
     background-color: transparent;
     color: var(--kitt-color-primary);
     border: 2px solid var(--kitt-color-primary);
+
+    &.kitt-button--secondary {
+      color: var(--kitt-color-secondary);
+      border-color: var(--kitt-color-secondary);
+    }
+
+    &:hover {
+      color: var(--kitt-color-background);
+      border-color: var(--kitt-color-background);
+    }
   }
 
   &--pill {
-    border-radius: 100vh; /* keep pill shape */
+    /* keep pill shape over all sizes */
+    border-radius: 100vh;
   }
 
   &--small {
     font-size: var(--kitt-font-size-small);
     padding: calc(var(--kitt-space-extra-small) - 4px) var(--kitt-space-small);
+
+    &::after {
+      height: 1px;
+      bottom: 6px;
+    }
+
+    &:hover::after {
+      left: var(--kitt-space-small);
+      width: calc(100% - (var(--kitt-space-small) * 2));
+    }
   }
 
   &--large {
     font-size: var(--kitt-font-size-medium);
+
+    &::after {
+      height: 2px;
+    }
   }
 }
