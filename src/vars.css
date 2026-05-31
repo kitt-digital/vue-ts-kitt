@@ -1,10 +1,28 @@
 :root {
   --kitt-color-primary: #2b87c8;
   --kitt-color-secondary: #66cc2b;
+  --kitt-color-background: #f6b40e;
+  /* color states */
   --kitt-color-success: #57c318;
   --kitt-color-danger: #d42626;
-  --kitt-color-warning: #f6b40e;
+  --kitt-color-warning: #f6c216;
   --kitt-color-info: #cc33cc;
-  --kitt-color-text: #141414;
+  /* color basic */
+  --kitt-color-black: #141414;
+  --kitt-color-white: #fff;
+  /* font style */
   --kitt-font-family: 'Mukta', 'Arial', sans-serif;
+  --kitt-font-size-extra-small: .5rem; /* 8px */
+  --kitt-font-size-small: .75rem; /* 12px */
+  --kitt-font-size-normal: 1rem; /* 16px */
+  --kitt-font-size-medium: 1.125rem; /* 18px */
+  --kitt-font-size-extra-medium: 1.25rem; /* 20px */
+  --kitt-font-size-large: 1.5rem; /* 24px */
+  --kitt-font-size-extra-large: 2rem; /* 32px */
+  /* spacing */
+  --kitt-space-extra-small: 8px;
+  --kitt-space-small: 16px;
+  --kitt-space-normal: 24px;
+  --kitt-space-large: 32px;
+  --kitt-space-extra-large: 40px;
 }
