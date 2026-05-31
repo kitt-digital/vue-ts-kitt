@@ -1,3 +1,10 @@
+# [1.18.0](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.17.5...v1.18.0) (2026-05-31)
+
+
+### Features
+
+* **components:** + Headline component ([0e73a33](https://github.com/kitt-digital/vue-ts-kitt/commit/0e73a3318a577524a30b7620637dd2de2637677b))
+
 ## [1.17.5](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.17.4...v1.17.5) (2026-05-31)
 
 ## [1.17.4](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.17.3...v1.17.4) (2026-05-31)
