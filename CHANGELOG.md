@@ -1,3 +1,10 @@
+# [1.17.0](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.16.5...v1.17.0) (2026-05-31)
+
+
+### Bug Fixes
+
+* **font:** ~ font-family name ([aecf398](https://github.com/kitt-digital/vue-ts-kitt/commit/aecf398407664e29be5c170aeb48034798f21ad0))
+
 ## [1.16.5](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.16.4...v1.16.5) (2026-05-29)
 
 ## [1.16.4](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.16.3...v1.16.4) (2026-05-29)
