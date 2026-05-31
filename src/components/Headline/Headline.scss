@@ -1,0 +1,32 @@
+
+h1, h2, h3, h4, h5, h6 {
+  &.kitt-headline {
+    color: var(--kitt-color-black);
+    font-family: var(--kitt-font-family);
+    font-weight: 700;
+  }
+}
+
+h1.kitt-headline {
+  font-size: var(--kitt-font-size-extra-large);
+}
+
+h2.kitt-headline {
+  font-size: var(--kitt-font-size-large);
+}
+
+h3.kitt-headline {
+  font-size: var(--kitt-font-size-extra-medium);
+}
+
+h4.kitt-headline {
+  font-size: var(--kitt-font-size-medium);
+}
+
+h5.kitt-headline {
+  font-size: var(--kitt-font-size-normal);
+}
+
+h6.kitt-headline {
+  font-size: var(--kitt-font-size-small);
+}
