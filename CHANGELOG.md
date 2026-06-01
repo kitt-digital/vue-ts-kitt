@@ -1,3 +1,10 @@
+## [1.18.2](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.18.1...v1.18.2) (2026-06-01)
+
+
+### Bug Fixes
+
+* **storybook:** ~ regex, remove comments ([c2e8ce0](https://github.com/kitt-digital/vue-ts-kitt/commit/c2e8ce0aa8007c255f2de44d994d88670b0b595a))
+
 ## [1.18.1](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.18.0...v1.18.1) (2026-06-01)
 
 
