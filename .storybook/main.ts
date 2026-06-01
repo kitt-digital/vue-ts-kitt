@@ -50,9 +50,13 @@ const config: StorybookConfig = {
         name: 'ClosePlugin',
         // use this to catch the end of a build without errors
         closeBundle(id) {
-          // compress big files
-          // sb-manager/globals-runtime.js
-          // sb-manager/runtime.js
+          /**
+           * Compress big files
+           * 
+           * biggest files:
+           * sb-manager/globals-runtime.js > 3MB
+           * sb-manager/runtime.js > 1MB
+           */
           const files = [
             '../dist/storybook/sb-manager/runtime.js',
             '../dist/storybook/sb-manager/globals-runtime.js'
@@ -61,6 +65,12 @@ const config: StorybookConfig = {
             const content = readFileSync(resolve(__dirname, file), {
               encoding: 'utf8',
               flag: 'r'
+              /**
+               * Remove "only" comments
+               * Note:
+               * Removing the line breaks destroys the output
+               * File is not readable anymore
+               */
             }).replace(/\n[\s]+\/\/.*/g, '');
             writeFileSync(resolve(__dirname, file), content, {
               encoding: 'utf8',
