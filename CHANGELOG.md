@@ -1,3 +1,11 @@
+## [1.18.1](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.18.0...v1.18.1) (2026-06-01)
+
+
+### Bug Fixes
+
+* **storybook:** ~ vite config, compress sb-manager filess ([cbd47b7](https://github.com/kitt-digital/vue-ts-kitt/commit/cbd47b7f975e7e8ed7530d9209b300e55200acf9))
+* **vite:** - deprecation warning, asset.name => asset.names ([b3308c2](https://github.com/kitt-digital/vue-ts-kitt/commit/b3308c263d1cf8e8811e885e080f25e77c181bb7))
+
 # [1.18.0](https://github.com/kitt-digital/vue-ts-kitt/compare/v1.17.5...v1.18.0) (2026-05-31)
 
 
