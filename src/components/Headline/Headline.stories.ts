@@ -26,7 +26,10 @@ const meta: Meta<typeof Headline> = {
           Note: Only use one \`<h1>\` per page - this should represent the main heading/subject for the whole page. Also, do not skip heading levels - start with \`<h1>\`, then use \`<h2>\`, and so on.
           <br>
           <br>
-          <a href="https://www.w3schools.com/tAGS/tag_button.asp" target="_blank">Additional optional attributes</a>
+          You can also use optional
+          <a href="https://www.w3schools.com/tAGS/ref_standardattributes.asp" target="_blank">global standard attributes</a>
+          or
+          <a href="https://www.w3schools.com/tAGS/ref_eventattributes.asp" target="_blank">event attributes</a>
         `)
           .replace(/\s+/g, ' ')
           .trim()
