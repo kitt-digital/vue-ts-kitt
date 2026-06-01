@@ -91,8 +91,8 @@ export default defineConfig({
         entryFileNames: `[name].js`,
         chunkFileNames: `[name].js`,
         assetFileNames: asset => {
-          if (asset.name && asset.name.endsWith('.css')) {
-            return `${asset.name.replace(/\w+\.css$/, 'style.css')}`;
+          if (asset.names.length && asset.names[0].endsWith('.css')) {
+            return `${asset.names[0].replace(/\w+\.css$/, 'style.css')}`;
           }
           return `[name].[ext]`;
         },
