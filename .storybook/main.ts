@@ -61,13 +61,12 @@ const config: StorybookConfig = {
             const content = readFileSync(resolve(__dirname, file), {
               encoding: 'utf8',
               flag: 'r'
-            }).replace(/\s+/g, ' ');
+            }).replace(/\n[\s]+\/\/.*/g, '');
             writeFileSync(resolve(__dirname, file), content, {
               encoding: 'utf8',
               flag: 'w'
             });
           });
-          console.log('EXIT!');
           // exit process
           process.exit(0);
         }
