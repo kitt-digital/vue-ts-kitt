@@ -1,3 +1,10 @@
+import { fileURLToPath } from 'url';
+import { resolve, dirname } from 'path';
+import { readFileSync, writeFileSync } from 'fs';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
 import type { StorybookConfig } from '@storybook/vue3-vite';
 import { UserConfig, PluginOption } from 'vite';
 import vue from '@vitejs/plugin-vue';
@@ -35,7 +42,37 @@ const config: StorybookConfig = {
       return name !== 'unplugin-dts' && name !== 'vite:vue' && name !== 'ClosePlugin';
     });
     // reconfigure plugins
-    config.plugins = [vue(), ...config.plugins];
+    config.plugins = [
+      vue(),
+      ...config.plugins,
+      {
+        // custom plugin to call scripts after the build is finished
+        name: 'ClosePlugin',
+        // use this to catch the end of a build without errors
+        closeBundle(id) {
+          // compress big files
+          // sb-manager/globals-runtime.js
+          // sb-manager/runtime.js
+          const files = [
+            '../dist/storybook/sb-manager/runtime.js',
+            '../dist/storybook/sb-manager/globals-runtime.js'
+          ];
+          files.forEach(file => {
+            const content = readFileSync(resolve(__dirname, file), {
+              encoding: 'utf8',
+              flag: 'r'
+            }).replace(/\s+/g, ' ');
+            writeFileSync(resolve(__dirname, file), content, {
+              encoding: 'utf8',
+              flag: 'w'
+            });
+          });
+          console.log('EXIT!');
+          // exit process
+          process.exit(0);
+        }
+      }
+    ];
     /**
      * Set publicDir to false in the vite config
      * to avoid that storybook creates another copy
@@ -48,9 +85,15 @@ const config: StorybookConfig = {
     config.build = {
       ...config.build,
       copyPublicDir: false,
-      target: 'esnext',
+      target: 'es2016',
       // minify: false for debugging purposes
-      minify: true,
+      minify: 'terser',
+      terserOptions: {
+        ecma: 2016,
+        format: {
+          comments: false
+        }
+      },
       // disable css code splitting to avoid that storybook creates multiple css files in the dist folder
       cssCodeSplit: false,
       rolldownOptions: {
