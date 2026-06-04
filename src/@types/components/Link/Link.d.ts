@@ -1,7 +1,6 @@
 import { Component, AnchorHTMLAttributes, DefineComponent, ComponentOptionsMixin, PublicProps, ComponentProvideOptions } from 'vue';
 interface Props extends /* @vue-ignore */ AnchorHTMLAttributes {
     href: string;
-    target: string;
     content?: string | Component | undefined;
 }
 declare var __VLS_1: {};
@@ -10,8 +9,8 @@ type __VLS_Slots = {} & {
 };
 declare const __VLS_component: DefineComponent<Props, {}, {}, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {}, string, PublicProps, Readonly<Props> & Readonly<{}>, {
     href: string;
-    target: string;
     content: string | Component;
+    target: string;
 }, {}, {}, {}, string, ComponentProvideOptions, false, {}, any>;
 declare const _default: __VLS_WithSlots<typeof __VLS_component, __VLS_Slots>;
 export default _default;
