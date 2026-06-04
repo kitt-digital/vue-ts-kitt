@@ -19,10 +19,9 @@ const meta: Meta<typeof Link> = {
           or other \`HTML elements\` or \`Vue components/modules\`.
           <br>
           <br>
-          The Link component has two required attributes:
+          The Link component has one required attribute:
           <br>
-          \`href\` - Specifies the URL of the page the link goes to<br>
-          \`target\` - Specifies where to open the linked document
+          \`href\` - Specifies the URL of the page the link goes to
           <br>
           <br>
           <a href="https://www.w3schools.com/tAGS/tag_a.asp" target="_blank">Additional optional attributes</a>

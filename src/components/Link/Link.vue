@@ -14,7 +14,6 @@ import type { Component, AnchorHTMLAttributes } from 'vue';
 // Note: All HTML attributes are optional
 interface Props extends /* @vue-ignore */ AnchorHTMLAttributes {
   href: string;
-  target: string;
   content?: string | Component | undefined;
 }
 

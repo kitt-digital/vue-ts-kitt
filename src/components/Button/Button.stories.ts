@@ -16,7 +16,7 @@ const meta: Meta<typeof Button> = {
           Specify the \`type\` attribute for the Button component, to tell browsers what type of button it is (button, reset, submit)
           <br>
           <br>
-          The Button component has only one required attribute:
+          The Button component has one required attribute:
           <br>
           \`text\` - Specifies the text that is displayed
           <br>
