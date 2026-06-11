@@ -3,11 +3,9 @@ import type { Meta, StoryObj } from '@storybook/vue3-vite';
 import { default as Image } from './Image.vue';
 import i18n from './Image-i18n.json';
 
-// More on how to set up stories at: https://storybook.js.org/docs/writing-stories
 const meta: Meta<typeof Image> = {
   title: 'Components/Image',
   component: Image,
-  // This component will have an automatically generated docsPage entry: https://storybook.js.org/docs/writing-docs/autodocs
   tags: ['autodocs'],
   parameters: {
     docs: {
@@ -35,11 +33,7 @@ const meta: Meta<typeof Image> = {
 
 export default meta;
 type Story = StoryObj<typeof meta>;
-/*
- *👇 Render functions are a framework specific feature to allow you control on how the component renders.
- * See https://storybook.js.org/docs/api/csf
- * to learn how to use render functions.
- */
+
 export const Primary: Story = {
   name: 'Image',
   args: {

@@ -3,11 +3,9 @@ import type { Meta, StoryObj } from '@storybook/vue3-vite';
 import { default as Headline } from './Headline.vue';
 import i18n from './Headline-i18n.json';
 
-// More on how to set up stories at: https://storybook.js.org/docs/writing-stories
 const meta: Meta<typeof Headline> = {
   title: 'Components/Headline',
   component: Headline,
-  // This component will have an automatically generated docsPage entry: https://storybook.js.org/docs/writing-docs/autodocs
   tags: ['autodocs'],
   parameters: {
     docs: {
@@ -39,18 +37,12 @@ const meta: Meta<typeof Headline> = {
   argTypes: {
     tag: { control: 'select', options: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'] }
   },
-  args: {
-    // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
-  }
+  args: {}
 };
 
 export default meta;
 type Story = StoryObj<typeof meta>;
-/*
- *👇 Render functions are a framework specific feature to allow you control on how the component renders.
- * See https://storybook.js.org/docs/api/csf
- * to learn how to use render functions.
- */
+
 export const Primary: Story = {
   name: 'Headline',
   args: {
